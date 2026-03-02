@@ -44,7 +44,8 @@ $fontZise: clamp(1rem, 6vw, 1.4rem);
 // Extend's
 
 %article{
-    border: 1px $colorPrincipal solid;
+    // border: 1px $colorPrincipal solid; 3er cambio
+    border: 1px #000 solid
     
 }
 
