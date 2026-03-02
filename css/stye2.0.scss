@@ -41,8 +41,8 @@ $fontZise: clamp(.6rem, 4vw, 1rem);
 // Extend's
 
 %article{
-    border: 1px $colorPrincipal solid;
-    
+    // border: 1px $colorPrincipal solid;
+    border: 1px #000 solid
 }
 
 %h3{
