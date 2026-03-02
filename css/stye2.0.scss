@@ -50,8 +50,10 @@ $fontZise: clamp(1rem, 6vw, 1.4rem);
 }
 
 %h3{
-    font-size: .75rem;
+    // font-size: .75rem; 4to cambio
     font-weight: 600;
+
+    font-size: 1.25 rem;
 }
 
 %img{
