@@ -11,7 +11,8 @@ $fontZise: clamp(1rem, 6vw, 1.4rem);
 
 
 @mixin img100px{
-    width: 100px;
+    // width: 100px; 2do cambio
+    width: 200px;
 }
 
 @mixin flex{
