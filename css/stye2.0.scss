@@ -1,24 +1,17 @@
-
 // Variables
 
 $colorPrincipal: #FF6600;
 $colorWhite: #f5f5f5;
 $fontPrincipal: Verdana, Geneva, Tahoma, sans-serif;
-// $fontZise: clamp(.6rem, 4vw, 1rem);
-$fontZise: clamp(1rem, 6vw, 1.4rem);
+$fontZise: clamp(.6rem, 4vw, 1rem);
 
     
 // Mixins
 
 
 @mixin img100px{
-<<<<<<< primera_rama
-    // width: 100px; 2do cambio
-    width: 200px;
-=======
     width: 100px;
     
->>>>>>> master
 }
 
 @mixin flex{
@@ -50,25 +43,18 @@ $fontZise: clamp(1rem, 6vw, 1.4rem);
 // Extend's
 
 %article{
-    // border: 1px $colorPrincipal solid; 3er cambio
-    border: 1px #000 solid
+    border: 1px $colorPrincipal solid;
     
 }
 
 %h3{
-    // font-size: .75rem; 4to cambio
+    font-size: .75rem;
     font-weight: 600;
-<<<<<<< primera_rama
-
-    font-size: 1.25 rem;
-=======
     
->>>>>>> master
 }
 
 %img{
-    //  width: 100%; 5to cambio
-    width: 200px;
+    width: 100%;
 }
 
 // Codigo SASS
