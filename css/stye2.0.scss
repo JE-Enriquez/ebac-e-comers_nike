@@ -1,11 +1,10 @@
-
 // Variables
 
 $colorPrincipal: #FF6600;
 $colorWhite: #f5f5f5;
 $fontPrincipal: Verdana, Geneva, Tahoma, sans-serif;
-$fontZise: clamp(1rem, 4vw, 1.4rem);
-
+$fontZise: clamp(.6rem, 4vw, 1rem);
+$colorCerrar: #ff0000;
 
     
 // Mixins
@@ -13,26 +12,22 @@ $fontZise: clamp(1rem, 4vw, 1.4rem);
 
 @mixin img100px{
 
-    width: 200px;
-   
+    width: 100px;
 
-}
+    }
 
 @mixin flex{
     display: flex;
-    align-items: center;
-    align-items: center;
     box-sizing: border-box;
+    align-items: center;
     align-content: center;
     justify-content: center;
-    align-items: center;
-    align-content: center;
     text-align: center;
 }
 
 @mixin imgBanner{
     background-size: cover;
-    background-position-y: 40%;
+    background-position-y: 30%;
     background-position-x: center;
     align-content: center;
 }
@@ -47,20 +42,21 @@ $fontZise: clamp(1rem, 4vw, 1.4rem);
 // Extend's
 
 %article{
-    border: 1px #000 solid;
+    border: 1px $colorPrincipal solid;
     
 }
 
 %h3{
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 600;
 
+  
 
 }
 
 %img{
-    width: 95%;
-    
+   
+    width: 200px;
 }
 
 // Codigo SASS
@@ -77,7 +73,7 @@ body{
 
 
     header{
-        @include width100;
+        // @include img100px;
         background-color: $colorPrincipal;
     
         .header__menu{
@@ -95,7 +91,19 @@ body{
     }
 
     main{
-        @include width100;
+        // @include img100px;
+
+        .btn-cerrar{
+            background-color: $colorCerrar;
+        }
+        .productos__modal--buttom{
+            
+            background-color: $colorPrincipal;
+            
+            &:hover{
+                background-color: #ec9845;
+            }
+        }
 
         .main__banner{
             background-image: url(../img/bannerNike.jpg);
@@ -119,7 +127,7 @@ body{
             margin: 30px auto 0;
 
 
-            article{
+            .main__article{
                 @include flex;
                 flex-direction: column;
                 gap: 10px;
@@ -127,18 +135,36 @@ body{
                 // @extend %h3;
                 @extend %article;
                 
-                .main__productos--img{
+                .main__article--img{
                     
                     @extend %img;
+                    margin-top: 10px;
                 }
     
-                .main__productos--title{
+                .main__article--title{
                     @extend %h3;
                 }
-    
-                .main__productos--precio{
-                    font-size: 1rem;
+                
+                .main__article--precio{
+                    font-size: 1.4rem;
                     font-weight: 600;
+
+                
+                }
+                .main__article--modal{
+
+                    @include flex;
+                    justify-content: right;
+                    margin-bottom: 10px;
+                    margin-right: 20px;
+
+
+
+                    .productos__modal--buttom{
+                        width: 200px;
+                        background-color: $colorPrincipal;
+                    }
+
                 }
             }
             

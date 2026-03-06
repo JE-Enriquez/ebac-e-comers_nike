@@ -1,10 +1,14 @@
-body main .main__productos article {
+body main .main__productos .main__article {
   border: 1px #FF6600 solid;
 }
 
-body main .main__productos article .main__productos--title {
-  font-size: 0.75rem;
+body main .main__productos .main__article .main__article--title {
+  font-size: 1.6rem;
   font-weight: 600;
+}
+
+body main .main__productos .main__article .main__article--img {
+  width: 200px;
 }
 
 * {
@@ -17,18 +21,14 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body header {
-  width: 100%;
   background-color: #FF6600;
 }
 body header .header__menu {
   display: flex;
-  align-items: center;
-  align-items: center;
   box-sizing: border-box;
+  align-items: center;
   align-content: center;
   justify-content: center;
-  align-items: center;
-  align-content: center;
   text-align: center;
   justify-content: space-between;
   padding: 20px;
@@ -38,8 +38,14 @@ body header .header__menu--logojust,
 body header .header__menu--logoNike {
   width: 100px;
 }
-body main {
-  width: 100%;
+body main .btn-cerrar {
+  background-color: #ff0000;
+}
+body main .productos__modal--buttom {
+  background-color: #FF6600;
+}
+body main .productos__modal--buttom:hover {
+  background-color: #ec9845;
 }
 body main .main__banner {
   background-image: url(../img/bannerNike.jpg);
@@ -60,25 +66,37 @@ body main .main__productos {
   width: 80%;
   margin: 30px auto 0;
 }
-body main .main__productos article {
+body main .main__productos .main__article {
   display: flex;
-  align-items: center;
-  align-items: center;
   box-sizing: border-box;
+  align-items: center;
   align-content: center;
   justify-content: center;
-  align-items: center;
-  align-content: center;
   text-align: center;
   flex-direction: column;
   gap: 10px;
 }
-body main .main__productos article .main__productos--img {
-  width: 100px;
+body main .main__productos .main__article .main__article--img {
+  margin-top: 10px;
 }
-body main .main__productos article .main__productos--precio {
-  font-size: 0.8rem;
+body main .main__productos .main__article .main__article--precio {
+  font-size: 1.4rem;
   font-weight: 600;
+}
+body main .main__productos .main__article .main__article--modal {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  justify-content: right;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+body main .main__productos .main__article .main__article--modal .productos__modal--buttom {
+  width: 200px;
+  background-color: #FF6600;
 }
 body main .main__cart {
   width: 500px;
@@ -103,13 +121,10 @@ body main .main__cart .main__cart--title {
 }
 body main .main__cart .cart__container {
   display: flex;
-  align-items: center;
-  align-items: center;
   box-sizing: border-box;
+  align-items: center;
   align-content: center;
   justify-content: center;
-  align-items: center;
-  align-content: center;
   text-align: center;
   justify-content: space-between;
 }
